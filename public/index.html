@@ -4,9 +4,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Piazzolla:wght@200;300;400;900&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/svg">
     <title>iLearning</title>
 </head>
 <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark pl-5 fixed-top">
+        <a class="navbar-brand" href="/">iLearn</a>
+        <span class="navbar-text">Explore and Learn</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse float-right" id="navbarNav">
+          <ul class="navbar-nav custom-nav pl-4">
+              <li class="nav-item custom-nav-item"> <a href="" class="nav-link">Courses</a> </li>
+              <li class="nav-item custom-nav-item"> <a href="" class="nav-link">Payment Status</a> </li>
+              <li class="nav-item custom-nav-item"> <a href="" class="nav-link">My Profile</a> </li>
+              <li class="nav-item custom-nav-item"> <a href="" class="nav-link">Logout</a> </li>
+              <li class="nav-item custom-nav-item"> <a href="" class="nav-link">Login</a> </li>
+              <li class="nav-item custom-nav-item"> <a href="" class="nav-link">Signup</a> </li>
+              <li class="nav-item custom-nav-item"> <a href="" class="nav-link">Feedback</a> </li>
+              <li class="nav-item custom-nav-item"> <a href="" class="nav-link">Contact</a> </li>
+              <li class="nav-item custom-nav-item"> <a href="" class="nav-link">Home</a> </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- NavBar -->
+      <!-- VideoBackground -->
+      <div class="container-fluid remove-vid-margin">
+          <div class="vid-parent">
+              <video playsinline autoplay muted loop>
+                  <source src="./video/first.mp4">
+              </video>
+              <div class="vid-overlay"></div>
+          </div>
+          <div class="vid-content">
+              <h1 class="my-content-main">Welcome to iLearn</h1>
+              <small class="my-content">Explore and Learn</small>
+              <br>
+              <a href="" class="btn btn-danger">Get Started</a>
+          </div>
+      </div>
+      <!-- VideoBackground -->
+      <!-- videoEnd -->
+      <div class="container-fluid  txt-banner">
+          <div class="row bottom-banner">
+              <div class="col-sm">
+                  <h5> <i class="fas fa-book-open mr-3"></i> 100+ Online Courses </h5>
+              </div>
+              <div class="col-sm">
+                <h5> <i class="fas fa-users mr-3"></i>Expert Faculty</h5>
+            </div>
+            <div class="col-sm">
+                <h5> <i class="fas fa-keyboard mr-3"></i>Lifetime Access </h5>
+            </div>
+            <div class="col-sm">
+                <h5> <i class="fas fa-rupee-sign mr-3"></i>Money Back Gurantee</h5>
+            </div>
+          </div>
+      </div>
+      <!-- videoEnd -->
+      <!-- MostPopularCourses1 -->
+      <div class="container mt-5">
+          <h1 class="text-center">Popular Courses</h1>
+          <div class="card-deck mt-4">
+              <a href="" style="text-align: left; padding:0; margin:0;">
+                  <div class="card">
+                      <img class="card-img-top" src="./images/guitar.jpg" alt="guitar">
+                      <div class="card-body">
+                          <h5 class="card-title">Learn Guitar Easy Way</h5>
+                          <p class="card-text">Master all the basic chords within 2 weeks.</p>
+                      </div>
+                      <div class="card-footer">
+                          <p class="card-text d-inline">Price: <small><del>&#8377 2000</del></small> <span class="font-weight-bolder">&#8377 200</span></p>
+                          <a class="btn btn-primary text-white font-weight-bolder float-right" href="">Enroll</a>
+                      </div>
+                  </div>
+              </a>
+              <a href="" style="text-align: left; padding:0; margin:0;">
+                <div class="card">
+                    <img class="card-img-top" src="./images/guitar.jpg" alt="guitar">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Guitar Easy Way</h5>
+                        <p class="card-text">Master all the basic chords within 2 weeks.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text d-inline">Price: <small><del>&#8377 2000</del></small> <span class="font-weight-bolder">&#8377 200</span></p>
+                        <a class="btn btn-primary text-white font-weight-bolder float-right" href="">Enroll</a>
+                    </div>
+                </div>
+            </a> 
+            <a href="" style="text-align: left; padding:0; margin:0;">
+                <div class="card">
+                    <img class="card-img-top" src="./images/guitar.jpg" alt="guitar">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Guitar Easy Way</h5>
+                        <p class="card-text">Master all the basic chords within 2 weeks.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text d-inline">Price: <small><del>&#8377 2000</del></small> <span class="font-weight-bolder">&#8377 200</span></p>
+                        <a class="btn btn-primary text-white font-weight-bolder float-right" href="">Enroll</a>
+                    </div>
+                </div>
+            </a> 
+          </div>
+        <!-- MostPopularCourses1-->
+        <!-- MostPopularCourses2-->
+        <div class="card-deck mt-4">
+            <a href="" style="text-align: left; padding:0; margin:0;">
+                <div class="card">
+                    <img class="card-img-top" src="./images/python.jpg" alt="python">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Guitar Easy Way</h5>
+                        <p class="card-text">Master all the basic chords within 2 weeks.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text d-inline">Price: <small><del>&#8377 2000</del></small> <span class="font-weight-bolder">&#8377 200</span></p>
+                        <a class="btn btn-primary text-white font-weight-bolder float-right" href="">Enroll</a>
+                    </div>
+                </div>
+            </a>
+            <a href="" style="text-align: left; padding:0; margin:0;">
+                <div class="card">
+                    <img class="card-img-top" src="./images/python.jpg" alt="python">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Guitar Easy Way</h5>
+                        <p class="card-text">Master all the basic chords within 2 weeks.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text d-inline">Price: <small><del>&#8377 2000</del></small> <span class="font-weight-bolder">&#8377 200</span></p>
+                        <a class="btn btn-primary text-white font-weight-bolder float-right" href="">Enroll</a>
+                    </div>
+                </div>
+            </a>
+            <a href="" style="text-align: left; padding:0; margin:0;">
+                <div class="card">
+                    <img class="card-img-top " src="./images/python.jpg" alt="python">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Guitar Easy Way</h5>
+                        <p class="card-text">Master all the basic chords within 2 weeks.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text d-inline">Price: <small><del>&#8377 2000</del></small> <span class="font-weight-bolder">&#8377 200</span></p>
+                        <a class="btn btn-primary text-white font-weight-bolder float-right" href="">Enroll</a>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- MostPopularCourses2-->
+        <div class="text-center m-2">
+            <a class="btn btn-danger btn-sm" href="">View All Courses</a>
+        </div>
+      </div>
     
+      
 </body>
 </html>
