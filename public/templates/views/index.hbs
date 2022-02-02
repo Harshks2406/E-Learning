@@ -150,30 +150,7 @@
         </div>
       </div>
         <!-- contactUsPage -->
-        <div class="container mt-5" id="Contact">
-            <h2 class="text-center mb-4">Contact Us</h2>
-            <div class="row">
-                <div class="col-md-8">
-                    <form action="" method="post">
-                        <input type="text" class="form-control" name="name" placeholder="Name"><br>
-                        <input type="text" class="form-control" name="subject" placeholder="Subject"><br>
-                        <input type="email" class="form-control" name="email" placeholder="Email"><br>
-                        <textarea name="message" class="form-control" placeholder="How can we help you?" style="height:150px;"></textarea><br>
-                        <input type="submit" class="btn btn-primary btn-lg" value="Send" name="submit"><br> <br>
-                    </form>
-                </div>
-                <!-- address -->
-                <div class="col-md-4 stripe  text-center">
-                    <h4>iLearn</h4>
-                    <p>iLearn, Near Kashmiri Gate,
-                    New Delhi - 100089,<br>
-                    Phone: +00000000 <br>
-                    www.iLearn.com
-                    </p>
-                </div> 
-                <!-- address -->
-            </div>
-        </div>
+        {{>contact}}
         <!-- contactUsPage -->
         <!-- Testimonial -->
         <div class="container-fluid mt-5">
@@ -246,100 +223,6 @@
         <!-- footer -->
         {{>footer}}
         <!-- footer -->
-        <!-- Registration model -->
-        <!-- Modal -->
-        <div class="modal fade" id="stuRegModalCenter" tabindex="-1" aria-labelledby="stuRegModalCenterLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="stuRegModalCenterLabel">Student Registration</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="from-group">
-                            <i class="fas fa-user"></i><label for="stuname" class="pl-2 font-weight-bold">Name</label>
-                          <input type="text" class="form-control" placeholder="Name" name="stuname" id="stuname">
-                        </div>
-                        <div class="from-group">
-                            <i class="fas fa-envelope"></i><label for="stuemail" class="pl-2 font-weight-bold">Email</label>
-                          <input type="email" class="form-control" placeholder="Email" name="stuemail" id="stuemail">
-                          <small class="form-text">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="from-group">
-                            <i class="fas fa-key"></i><label for="stupass" class="pl-2 font-weight-bold">New Password</label>
-                          <input type="password" class="form-control" placeholder="Password" name="stupass" id="stupass">
-                        </div>
-                        
-                      </form>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Signup</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-            </div>
-        </div>
-        <!-- Registration model -->
-        <!-- Login model -->
-        <!-- Modal -->
-        <div class="modal fade" id="stuLoginModalCenter" tabindex="-1" aria-labelledby="stuLoginModalCenterLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="stuLoginModalCenterLabel">Student Login</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form class="stuLoginForm">
-                        <div class="from-group">
-                            <i class="fas fa-envelope"></i><label for="stuLogemail" class="pl-2 font-weight-bold">Email</label>
-                            <input type="email" class="form-control" placeholder="Email" name="stuLogemail" id="stuLogemail">
-                        </div>
-                        <div class="from-group">
-                            <i class="fas fa-key"></i><label for="stuLogpass" class="pl-2 font-weight-bold">Password</label>
-                            <input type="password" class="form-control" placeholder="Password" name="stuLogpass" id="stuLogpass">
-                        </div>
-                        
-                      </form>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-primary" id="stuLoginBtn">Login</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                </div>
-            </div>
-            </div>
-        </div>
-        <!-- Login model -->
-        <!-- Admin Login model -->
-        <!-- Modal -->
-        <div class="modal fade" id="adminLoginModalCenter" tabindex="-1" aria-labelledby="adminLoginModalCenterLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="adminLoginModalCenterLabel">Admin Login</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form class="adminLoginForm">
-                        <div class="from-group">
-                            <i class="fas fa-envelope"></i><label for="adminLogemail" class="pl-2 font-weight-bold">Email</label>
-                            <input type="email" class="form-control" placeholder="Email" name="adminLogemail" id="adminLogemail">
-                        </div>
-                        <div class="from-group">
-                            <i class="fas fa-key"></i><label for="adminLogpass" class="pl-2 font-weight-bold">Password</label>
-                            <input type="password" class="form-control" placeholder="Password" name="adminLogpass" id="adminLogpass">
-                        </div>
-                        
-                      </form>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-primary" id="adminLoginBtn">Login</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                </div>
-            </div>
-            </div>
-        </div>
-        <!-- Admin Login model -->
+        
 </body>
 </html>

@@ -17,13 +17,113 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
-    <title>Courses</title>
+    <title>Courses | iLearn</title>
 </head>
 <body>
+    {{!-- Nav --}}
     {{>nav}}
-    <div>
-        hello
+    {{!-- Nav --}}
+
+    {{!-- course page banner --}}
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <img src="../../images/online1.jpg" alt="" style="width:100%; object-fit:cover">
+        </div>
     </div>
-    {{>footer}}
+    {{!-- course page banner --}}
+    <!-- MostPopularCourses1 -->
+      <div class="container mt-5">
+          <h1 class="text-center course">All Courses</h1>
+          <div class="card-deck mt-4">
+              <a href="" style="text-align: left; padding:0; margin:0;">
+                  <div class="card">
+                      <img class="card-img-top" src="./images/guitar.jpg" alt="guitar">
+                      <div class="card-body">
+                          <h5 class="card-title">Learn Guitar Easy Way</h5>
+                          <p class="card-text">Master all the basic chords within 2 weeks.</p>
+                      </div>
+                      <div class="card-footer">
+                          <p class="card-text d-inline">Price: <small><del>&#8377 2000</del></small> <span class="font-weight-bolder">&#8377 200</span></p>
+                          <a class="btn btn-primary text-white font-weight-bolder float-right" href="/coursedetails">Enroll</a>
+                      </div>
+                  </div>
+              </a>
+              <a href="" style="text-align: left; padding:0; margin:0;">
+                <div class="card">
+                    <img class="card-img-top" src="./images/guitar.jpg" alt="guitar">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Guitar Easy Way</h5>
+                        <p class="card-text">Master all the basic chords within 2 weeks.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text d-inline">Price: <small><del>&#8377 2000</del></small> <span class="font-weight-bolder">&#8377 200</span></p>
+                        <a class="btn btn-primary text-white font-weight-bolder float-right" href="">Enroll</a>
+                    </div>
+                </div>
+            </a> 
+            <a href="" style="text-align: left; padding:0; margin:0;">
+                <div class="card">
+                    <img class="card-img-top" src="./images/guitar.jpg" alt="guitar">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Guitar Easy Way</h5>
+                        <p class="card-text">Master all the basic chords within 2 weeks.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text d-inline">Price: <small><del>&#8377 2000</del></small> <span class="font-weight-bolder">&#8377 200</span></p>
+                        <a class="btn btn-primary text-white font-weight-bolder float-right" href="">Enroll</a>
+                    </div>
+                </div>
+            </a> 
+          </div>
+        <!-- MostPopularCourses1-->
+        <!-- MostPopularCourses2-->
+        <div class="card-deck mt-4">
+            <a href="" style="text-align: left; padding:0; margin:0;">
+                <div class="card">
+                    <img class="card-img-top" src="./images/python.jpg" alt="python">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Guitar Easy Way</h5>
+                        <p class="card-text">Master all the basic chords within 2 weeks.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text d-inline">Price: <small><del>&#8377 2000</del></small> <span class="font-weight-bolder">&#8377 200</span></p>
+                        <a class="btn btn-primary text-white font-weight-bolder float-right" href="">Enroll</a>
+                    </div>
+                </div>
+            </a>
+            <a href="" style="text-align: left; padding:0; margin:0;">
+                <div class="card">
+                    <img class="card-img-top" src="./images/python.jpg" alt="python">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Guitar Easy Way</h5>
+                        <p class="card-text">Master all the basic chords within 2 weeks.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text d-inline">Price: <small><del>&#8377 2000</del></small> <span class="font-weight-bolder">&#8377 200</span></p>
+                        <a class="btn btn-primary text-white font-weight-bolder float-right" href="">Enroll</a>
+                    </div>
+                </div>
+            </a>
+            <a href="" style="text-align: left; padding:0; margin:0;">
+                <div class="card">
+                    <img class="card-img-top " src="./images/python.jpg" alt="python">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Guitar Easy Way</h5>
+                        <p class="card-text">Master all the basic chords within 2 weeks.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text d-inline">Price: <small><del>&#8377 2000</del></small> <span class="font-weight-bolder">&#8377 200</span></p>
+                        <a class="btn btn-primary text-white font-weight-bolder float-right" href="">Enroll</a>
+                    </div>
+                </div>
+            </a>
+        </div>
+        </div>
+        <!-- MostPopularCourses2-->
+    <div class="foot" style="margin-top:50vh">
+        {{!-- footer --}}
+        {{>footer}}
+        {{!-- footer --}}
+    </div>
 </body>
 </html>

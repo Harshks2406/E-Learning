@@ -21,7 +21,12 @@ app.get("/",(req,res)=>{
 app.get('/courses',(req,res)=>{
     res.render('courses');
 })
-
+app.get('/paymentstatus',(req,res)=>{
+    res.render('paymentstatus')
+})
+app.get('/coursedetails',(req,res)=>{
+    res.render('coursedetails')
+})
 
 
 app.listen(port,()=>{
