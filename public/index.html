@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Piazzolla:wght@200;300;400;900&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/logo.svg" type="image/svg">
     <title>iLearning</title>
@@ -74,7 +78,7 @@
       <!-- videoEnd -->
       <!-- MostPopularCourses1 -->
       <div class="container mt-5">
-          <h1 class="text-center">Popular Courses</h1>
+          <h1 class="text-center course">Popular Courses</h1>
           <div class="card-deck mt-4">
               <a href="" style="text-align: left; padding:0; margin:0;">
                   <div class="card">
@@ -164,7 +168,104 @@
             <a class="btn btn-danger btn-sm" href="">View All Courses</a>
         </div>
       </div>
-    
-      
+        <!-- contactUsPage -->
+        <div class="container mt-5" id="Contact">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="" method="post">
+                        <input type="text" class="form-control" name="name" placeholder="Name"><br>
+                        <input type="text" class="form-control" name="subject" placeholder="Subject"><br>
+                        <input type="email" class="form-control" name="email" placeholder="Email"><br>
+                        <textarea name="message" class="form-control" placeholder="How can we help you?" style="height:150px;"></textarea><br>
+                        <input type="submit" class="btn btn-primary btn-lg" value="Send" name="submit"><br> <br>
+                    </form>
+                </div>
+                <!-- address -->
+                <div class="col-md-4 stripe  text-center">
+                    <h4>iLearn</h4>
+                    <p>iLearn, Near Kashmiri Gate,
+                    New Delhi - 100089,<br>
+                    Phone: +00000000 <br>
+                    www.iLearn.com
+                    </p>
+                </div> 
+                <!-- address -->
+            </div>
+        </div>
+        <!-- contactUsPage -->
+        <!-- Testimonial -->
+        <div class="container-fluid mt-5">
+            <h1 class="text-center testyheading p-4">Student's Feedback</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="testimonial-slider" class="owl-carousel">
+                        <div class="testimonial">
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Voluptatum eveniet vitae recusandae perspiciatis laboriosam commodi quae odio eaque tenetur nesciunt, 
+                                pariatur quos, consequuntur optio non harum laborum alias hic unde.
+                            </p>
+                            <div class="pic">
+                                <img src="" alt="">
+                            </div>
+                            <div class="testimonial-prof">
+                                <h4>Sonam</h4>
+                                <small>Web Developer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial -->
+        <div class="container-fluid txt-banner p-3">
+            <div class="row bottom-banner ">
+                <div class="col-sm">
+                    <a class="text-dark social-hover" href=""> <i class="fab fa-facebook-f"></i> Facebook</a>
+                </div>
+                <div class="col-sm">
+                    <a class="text-dark social-hover" href=""> <i class="fab fa-twitter"></i> Twitter</a>
+              </div>
+              <div class="col-sm">
+                <a class="text-dark social-hover" href=""> <i class="fab fa-whatsapp"></i> Whatsapp</a>
+              </div>
+              <div class="col-sm">
+                <a class="text-dark social-hover" href=""> <i class="fab fa-instagram"></i> Instagram</a>
+              </div>
+            </div>
+        </div>
+        <!-- AboutSection -->
+        <div class="container-fluid p-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-sm">
+                        <h5>About Us</h5>
+                        <p>iLearn provides universal accsess to the world's best education,
+                             partening with top universities and organizations to offer courses online.
+                        </p>
+                    </div>
+                    <div class="col-sm">
+                        <h5>Category</h5>
+                        <a class="text-dark" href="">Web Development</a> <br>
+                        <a class="text-dark" href="">Web Designing</a> <br>
+                        <a class="text-dark" href="">Andriod App Development</a> <br>
+                        <a class="text-dark" href="">ios Development</a> <br>
+                        <a class="text-dark" href="">Data Analysis</a> <br>
+                    </div>
+                    <div class="col-sm">
+                        <h5>Contact Us</h5>
+                        <p>iLearn Pvt Ltd <br> Near Kashmiri Gate <br> New Delhi - 100089
+                        <br>Ph. 0000000000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- AboutSection -->
+        <!-- footer -->
+        <footer class="container-fluid bg-dark text-center p-1">
+            <small class="text-white">Copyright &copy; 2022  || Designed by Harsh Kumar || Admin Login</small>
+        </footer>
+        <!-- footer -->
 </body>
 </html>
