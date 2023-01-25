@@ -2,20 +2,21 @@ const mongoose = require("mongoose")
 const validator = require('validator')
 
 const userSchema = mongoose.Schema({
-    name: {
+    stuname: {
         type: String,
-        require: true
+        required: true
     },
-    email: {
+    stuemail: {
         type: String,
-        require: true,
+        required: true,
+        unique: true,
         validator(value){
             if(!validator.isEmail(value)){
                 window.alert("Invalid Email")
             }
         }
     },
-    password:{
+    stupass:{
         type:String,
         require: true
     },
