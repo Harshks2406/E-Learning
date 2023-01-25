@@ -20,5 +20,3 @@ const addStu = async(event) =>{
         }
     })
 }   
-
-console.log("hello")
